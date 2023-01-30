@@ -1,8 +1,8 @@
 
-/* Get the element you want displayed in fullscreen */ 
+ 
 var elem = document.documentElement;
 
-/* Function to open fullscreen mode */
+
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -16,7 +16,7 @@ function openFullscreen() {
   }
 }
 
-/* Function to close fullscreen mode */
+
 function closeFullscreen() {
   if (document.exitFullscreen) {
     document.exitFullscreen();
@@ -29,7 +29,7 @@ function closeFullscreen() {
   }
 }
 
-// Events
+
 var output = document.getElementById("myP");
 document.addEventListener("fullscreenchange", function() {
   output.innerHTML = "fullscreenchange event fired!";
